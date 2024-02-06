@@ -25,6 +25,7 @@ export class RecargaComponent {
       this.clienteService.gettransferenciaRecarga(dni, monto).subscribe(
         response => {
           console.log('Transferencia existosa', response);
+          alert('Transferencia exitosa')
         },
         error => {
           console.error('Error en la transferencia', error);

@@ -1,0 +1,18 @@
+<table>
+    <thead>
+    <tr>
+        <th>Codigo</th>
+        <th>Nombre</th>
+        <th>Fecha</th>
+        <th>Saldo</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let rec of recargas$ | async">
+          <td>{{ rec.cliente?.id }}</td>
+          <td>{{ rec.cliente?.nombre }}</td>
+          <td>{{ rec.fecha }}</td>
+          <td>{{ rec.saldo }}</td>
+        </tr>
+      </tbody>
+</table>

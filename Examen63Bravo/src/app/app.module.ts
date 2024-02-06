@@ -8,13 +8,15 @@ import { ClienteComponent } from './pages/cliente/cliente.component';
 import { HttpClientModule} from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RecargaComponent } from './pages/recarga/recarga.component';
+import { RecargasMostrarComponent } from './pages/recargas-mostrar/recargas-mostrar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
     ClienteComponent,
-    RecargaComponent
+    RecargaComponent,
+    RecargasMostrarComponent
   ],
   imports: [
     BrowserModule,

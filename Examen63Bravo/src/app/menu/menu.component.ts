@@ -9,5 +9,6 @@ export class MenuComponent {
   paginas = [
     {titulo: 'Cliente', path: 'paginas/cliente'},
     {titulo: 'Recarga', path: 'paginas/recarga'},
+    {titulo: 'Recargas', path: 'paginas/hechas'},
   ]
 }
