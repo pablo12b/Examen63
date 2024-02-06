@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./menu.component.css']
 })
 export class MenuComponent {
-
+  paginas = [
+    {titulo: 'Cliente', path: 'paginas/cliente'},
+    {titulo: 'Recarga', path: 'paginas/recarga'},
+  ]
 }
