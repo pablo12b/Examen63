@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Cliente } from 'src/app/domain/cliente';
 import { ClienteService } from 'src/app/services/cliente.service';
+import { AbstractControl, ValidationErrors, ValidatorFn } from '@angular/forms';
+
 
 @Component({
   selector: 'app-cliente',
@@ -18,6 +20,7 @@ export class ClienteComponent {
       saldo: [0, [Validators.required, Validators.min(0)]],
     });
   }
+
 
   onSubmit() {
     if (this.signUpForm.valid) {

@@ -14,4 +14,9 @@ export class ClienteService {
     let url = `${environment.WS_PATH}/clientes/`;
     return this.http.post<any>(url,cliente);
   }
+
+  gettransferenciaRecarga(dni: string, monto: number){
+    let url = `${environment.WS_PATH}/clientes/recarga?dni=${encodeURIComponent(dni)}&monto=${encodeURIComponent(monto)}`;
+    return this.http.get<any>(url);
+  }
 }

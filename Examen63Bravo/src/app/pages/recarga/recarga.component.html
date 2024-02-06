@@ -2,12 +2,12 @@
     <h2>Iniciar Sesión</h2>
     <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
       <div class="form-group">
-        <label for="usuario">DNI:</label>
-        <input id="usuario" formControlName="dni" type="text" placeholder="DNI" required>
+        <label for="dni">DNI:</label>
+        <input id="dni" formControlName="dni" type="text" placeholder="DNI" required>
       </div>
       <div class="form-group">
-        <label for="contras">Monto:</label>
-        <input id="contras" formControlName="monto" type="number" placeholder="Monto" required>
+        <label for="monto">Monto:</label>
+        <input id="monto" formControlName="monto" type="number" placeholder="Monto" required>
       </div>
       <div class="form-actions">
         <button type="submit" [disabled]="!loginForm.valid">Recargar</button>

@@ -18,21 +18,20 @@ export class RecargaComponent {
   }
 
   onSubmit() {
-    /*if (this.loginForm.valid) {
-      const usuario = this.loginForm.value.usuario;
-      const contras = this.loginForm.value.contras;
+    if (this.loginForm.valid) {
+      const dni = this.loginForm.value.dni;
+      const monto = this.loginForm.value.monto;
       // Realizar la llamada al servicio y suscribirse para manejar la respuesta
-      this.clienteService.getVerificarClientes(usuario, contras).subscribe(
+      this.clienteService.gettransferenciaRecarga(dni, monto).subscribe(
         response => {
-          console.log('Inicio de sesión exitoso', response);
-          this.router.navigate(['/paginas/inicio']); // Redirige al usuario a la página de inicio
+          console.log('Transferencia existosa', response);
         },
         error => {
-          console.error('Error al iniciar sesión', error);
+          console.error('Error en la transferencia', error);
           // Manejar aquí el error, por ejemplo, mostrando un mensaje al usuario
         }
       );
-    }*/
+    }
   }
 
 }
